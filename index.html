@@ -433,6 +433,23 @@
   }
   .proj-link:hover{color:var(--rose-deep);text-decoration:underline;}
 
+  .subsection{margin-bottom:64px;}
+  .subsection:last-child{margin-bottom:0;}
+  .sub-head{
+    font-size:1.35rem;
+    display:flex;align-items:center;gap:8px;
+  }
+  .sub-desc{
+    color:var(--mocha-soft);
+    max-width:640px;
+    margin:10px 0 28px;
+    font-size:.96rem;
+  }
+  .proj-grid.single{
+    grid-template-columns:1fr;
+    max-width:420px;
+  }
+
   /* ---------- STICKERS ---------- */
   .sticker-section{
     background:var(--rose-dark);
@@ -532,7 +549,6 @@
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#work">Web Work</a></li>
-      <li><a href="#stickers">Stickers</a></li>
       <li><a href="#contact" class="nav-cta">Say Hi</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="menu">☰</button>
@@ -553,10 +569,10 @@
   <div class="hero-text">
     <span class="eyebrow">Admin · HR · Creative Virtual Assistant</span>
     <h1>Hi, I'm Diane —<br>your <em>organized</em>, <em>kind</em>, and a little <em>kawaii</em> right hand.</h1>
-    <p class="lede">I keep businesses running behind the scenes — HR operations, admin support, social media, and light design — with the same warmth and attention to detail .</p>
+    <p class="lede">I keep businesses running behind the scenes — HR operations, admin support, social media, and light design — with the same warmth and attention to detail in everything I touch.</p>
     <div class="hero-tags">
       <span class="tag">📍 Quezon City, PH</span>
-      <span class="tag">🎓 BS Business Admin· HR</span>
+      <span class="tag">🎓 BS Business Admin · HR</span>
       <span class="tag">💌 Remote-ready</span>
     </div>
     <div class="hero-ctas">
@@ -573,10 +589,10 @@
       <span class="eyebrow">About me</span>
       <h2>A little bit HR, a little bit creative, all-around organized.</h2>
       <p>I'm a Business Administration graduate (major in Human Resource Development Management) who's spent the last several years supporting small teams and business owners — from HR operations and onboarding to scheduling, records, and social media. I like the quiet satisfaction of a clean inbox and a well-tagged spreadsheet just as much as I like designing something cute.</p>
-      <p>Outside of admin work, I design kawaii sticker artwork for a client's Etsy shop and help style simple, friendly websites — this page is one of them!</p>
+      <p>Outside of admin work, I help manage social media for a client's food TikTok and style simple, friendly websites — this page is one of them!</p>
       <ul class="fact-list">
         <li><span class="ico">📍</span> Novaliches, Quezon City, Philippines</li>
-        <li><span class="ico">📧</span> hello..dianewalter@gmail.com</li>
+        <li><span class="ico">📧</span> hello.dianewalter@gmail.com</li>
         <li><span class="ico">📱</span> 0905-315-9701</li>
         <li><span class="ico">🎓</span> BS Business Administration, major in HR Development Management — University of Caloocan City</li>
       </ul>
@@ -718,50 +734,60 @@
   </div>
 </section>
 
-<!-- PROJECTS / WEB WORK -->
+<!-- PROJECTS / SELECTED WORK -->
 <section id="work">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">Selected Web Work</span>
-      <h2>Websites I've helped bring to life</h2>
-      <p>As part of my virtual assistant and admin work, I help small healthcare and care-service businesses get a clean, professional web presence. Here's a peek at a few — click any link below its preview to visit the live site.</p>
+      <span class="eyebrow">Portfolio</span>
+      <h2>Selected Work</h2>
+      <p>A mix of what I do behind the scenes for clients — from managing social media to helping small businesses get online, to designing something cute on the side.</p>
     </div>
 
-    <div class="proj-grid reveal" id="projGrid"></div>
-  </div>
-</section>
-
-<!-- STICKERS -->
-<section id="stickers">
-  <div class="wrap">
-    <div class="sticker-section reveal">
-      <div class="blob" style="width:280px;height:280px;background:var(--gold);top:-80px;right:-80px;opacity:.25;"></div>
-      <div class="sticker-inner">
-        <div>
-          <span class="eyebrow">Creative Side Project</span>
-          <h2>I design kawaii stickers, too 🐾</h2>
-          <p>For a pet-loving Etsy client, I help design the cute die-cut animal sticker artwork sold under <strong>WithTrouvaille</strong> — a kawaii sticker shop for animal lovers and pet owners. Every design is made to look adorable enough to want to peel and stick everywhere.</p>
-          <div class="shop-meta">
-            <img class="shop-icon" src="https://i.etsystatic.com/22638633/r/isla/5ec085/68594041/isla_180x180.68594041_8vbn1dno.jpg" alt="WithTrouvaille shop icon">
-            <div>
-              <strong>WithTrouvaille</strong>
-              <p class="rating">★★★★★ 5.0 · 1.3k sales · 6 years on Etsy</p>
+    <div class="subsection reveal">
+      <h3 class="sub-head">📱 Social Media</h3>
+      <p class="sub-desc">I manage TikTok for a San Diego food creator — planning and filming video content, editing every clip, writing captions, scheduling posts, and keeping an eye on engagement so we know what's actually working.</p>
+      <div class="proj-grid single">
+        <div class="proj-card">
+          <div class="proj-shot" style="background:linear-gradient(135deg,rgba(37,244,238,.18),rgba(254,44,85,.16)), var(--cream-2);">
+            <span class="proj-tag">TikTok · San Diego</span>
+            <div style="text-align:center;">
+              <div style="font-size:2.6rem;line-height:1;">🎬</div>
+              <div style="font-family:'Quicksand',sans-serif;font-weight:700;color:var(--rose-dark);margin-top:8px;">@natethefoodie</div>
             </div>
           </div>
-          <div class="hero-ctas" style="margin-top:28px;">
-            <a href="https://www.etsy.com/shop/WithTrouvaille" target="_blank" rel="noopener" class="btn" style="background:var(--gold);color:var(--rose-dark);">Visit the Etsy shop 🛍️</a>
-          </div>
-        </div>
-        <div class="sticker-gallery">
-          <div class="sticker-frame sf1">
-            <img src="https://i.etsystatic.com/22638633/r/il/a71e34/2567168360/il_300x300.2567168360_qpi5.jpg" alt="Golden retriever kawaii sticker pack">
-          </div>
-          <div class="sticker-frame sf2">
-            <img src="https://i.etsystatic.com/22638633/r/il/bd8050/4560965110/il_300x300.4560965110_kuaw.jpg" alt="Pitbull kawaii sticker pack">
+          <div class="proj-body">
+            <h3>Nate the Foodie</h3>
+            <p>Video content creation, editing, audience engagement, and posting schedule for a San Diego food TikTok account — turning restaurant visits into scroll-stopping clips.</p>
+            <a class="proj-link" href="https://www.tiktok.com/@natethefoodie" target="_blank" rel="noopener">🔗 tiktok.com/@natethefoodie</a>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="subsection reveal">
+      <h3 class="sub-head">🌐 Websites I've Helped Bring to Life</h3>
+      <p class="sub-desc">As part of my virtual assistant and admin work, I help small healthcare and care-service businesses get a clean, professional web presence. Click any link below its preview to visit the live site.</p>
+      <div class="proj-grid" id="projGrid"></div>
+    </div>
+
+    <div class="subsection reveal">
+      <h3 class="sub-head">🎀 Stickers</h3>
+      <p class="sub-desc">I help this client design cute animal pictures to sell as stickers on Etsy — every design made to look adorable enough to peel and stick everywhere.</p>
+      <div class="proj-grid single">
+        <div class="proj-card">
+          <div class="proj-shot">
+            <span class="proj-tag">Etsy · Kawaii Stickers</span>
+            <img src="https://i.etsystatic.com/22638633/r/isbl/bb0308/68594035/isbl_1680x420.68594035_owvr7di0.jpg" alt="WithTrouvaille Etsy shop preview" loading="lazy">
+          </div>
+          <div class="proj-body">
+            <h3>WithTrouvaille</h3>
+            <p>Kawaii die-cut animal sticker artwork designed for a pet-loving Etsy shop — golden retrievers, pitbulls, and more, made for pet owners and animal lovers.</p>
+            <a class="proj-link" href="https://www.etsy.com/shop/WithTrouvaille?fbclid=IwY2xjawTLRLdleHRuA2FlbQIxMABicmlkETFRd3ZYRnNrcG93TGMzZ1Zoc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHoprNqsQXtNj7_r5qxMJ3SoE3q5U4KR4C6zOOIEidVlG-egAWVwIzwLL6DY-_aem_QMbuMTdGts5be1jRG1ZfbQ" target="_blank" rel="noopener">🔗 etsy.com/shop/WithTrouvaille</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -773,7 +799,7 @@
       <h2>Let's work together 🎀</h2>
       <p>Whether you need HR &amp; admin support, a social media manager, or someone to keep your business organized behind the scenes — I'd love to help.</p>
       <div class="contact-links">
-        <a href="mailto:hello..dianewalter@gmail.com" class="btn btn-primary">✉️ hello..dianewalter@gmail.com</a>
+        <a href="mailto:hello.dianewalter@gmail.com" class="btn btn-primary">✉️ hello.dianewalter@gmail.com</a>
         <a href="tel:+639053159701" class="btn btn-ghost">📱 0905-315-9701</a>
       </div>
     </div>
@@ -804,7 +830,7 @@
   }, {threshold:.12});
   reveals.forEach(r=>io.observe(r));
 
-  // project data
+  // project data (websites only — TikTok and stickers have dedicated cards above/below)
   const projects = [
     {
       name: "24/7 Care Services",
